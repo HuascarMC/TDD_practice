@@ -41,5 +41,21 @@ def number_to_full_month_name(number)
   end
 end
 
-def number_to_short_month_name
+def number_to_short_month_name(number)
+  case number
+  when 1
+    return "Jan"
+  when 3
+    return "Mar"
+  when 9
+    return "Sep"
+  end
+end
+
+def volc(number)
+  return number**3
+end
+
+def vols(number)
+  return (4/3)*3.14*(number**3)
 end

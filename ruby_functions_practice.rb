@@ -59,3 +59,7 @@ end
 def vols(number)
   return (4/3)*3.14*(number**3)
 end
+
+def temperature(number)
+  return (number*1.8)+32
+end

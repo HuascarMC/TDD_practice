@@ -61,5 +61,5 @@ def vols(number)
 end
 
 def temperature(number)
-  return (number*1.8)+32
+  return ((number - 32) / 1.8).round(3)
 end

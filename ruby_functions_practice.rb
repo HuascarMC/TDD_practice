@@ -61,14 +61,15 @@ def number_to_short_month_name_2( number )
 end
 
 #
-def volc( number )
-  return number ** 3
+def volc( length )
+  return length ** 3
 end
 #
-def vols( number )
-  return (4/3) * 3.14 * (number ** 3)
+def vols( radius )
+  volume = (4/3) * Math::PI * ( radius ** 3)
+  return volume.round(2)
 end
 #
-def temperature( number )
-  return ((number - 32) / 1.8).round(3)
+def temperature( temp )
+  return ((temp - 32) / 1.8).round(3)
 end

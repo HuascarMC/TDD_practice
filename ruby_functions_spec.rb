@@ -65,6 +65,14 @@ class Functions_Practice < MiniTest::Test
     assert_equal( "Sep", ninth_month_string )
   end
 
+  def test_substring_2()
+    first_month_string = number_to_short_month_name_2( 1 )
+    third_month_string = number_to_short_month_name_2( 3 )
+    ninth_month_string = number_to_short_month_name_2( 9 )
+    assert_equal( "Jan", first_month_string )
+    assert_equal( "Mar", third_month_string )
+    assert_equal( "Sep", ninth_month_string )
+  end
 
 
   #Further
@@ -78,14 +86,14 @@ class Functions_Practice < MiniTest::Test
 
   #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
-    result =(4/3)*3.14*(1**3)
+    result =(4/3) * 3.14 * ( 1 ** 3 )
     assert_equal(3.14, result)
   end
 
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
-    result = temperature(60)
-    assert_equal(15.556, result)
+    result = temperature( 60 )
+    assert_equal( 15.556, result )
   end
 
 end
